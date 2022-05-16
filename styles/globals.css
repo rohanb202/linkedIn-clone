@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-100;
+  }
+}
+@layer components {
+  .intent {
+    @apply flex items-center justify-between max-w-md p-4 mx-auto text-black bg-white rounded-lg cursor-pointer hover:shadow-xl xl:mx-0;
+  }
+  .sidebarButton {
+    @apply px-4 py-3 border-gray-600 cursor-pointer dark:border-t opacity-80 hover:opacity-100;
+  }
+  .sidebarLink {
+    @apply text-[13px] font-medium text-blue-500 hover:underline cursor-pointer px-2.5;
+  }
+  .inputButton {
+    @apply flex items-center space-x-2 text-sm font-medium cursor-pointer;
+  }
+  .postButton {
+    @apply flex items-center justify-center space-x-2 cursor-pointer hover:bg-black/10 dark:hover:bg-black/20 w-full py-2.5 rounded transition ease-out font-medium;
+  }
+}
